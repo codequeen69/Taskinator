@@ -225,6 +225,7 @@ var saveTasks = function () {
 var loadTasks = function () {
     tasks = localStorage.getItem("tasks");
     if (!tasks) {
+        tasks = [];
         return false;
     }
     tasks = JSON.parse(tasks);
